@@ -55,6 +55,11 @@ body .form #number {
   font-size: 45px;
   font-weight: 800;
 }
+body .form #number::-webkit-outer-spin-button,
+body .form #number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 body .form #number:focus {
   outline: none;
   border-bottom: 3px solid #eea63d;
