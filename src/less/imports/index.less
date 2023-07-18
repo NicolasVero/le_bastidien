@@ -15,6 +15,8 @@ html, body {
 		align-items: center;
 		flex-wrap: wrap;
 		gap: 15px;
+		margin-top: 125px;
+		margin-bottom: 25px;
 	
 		#number {
 			background: transparent;
@@ -33,7 +35,6 @@ html, body {
 			&:focus {
 				outline: none;
 				border-bottom: 3px solid @main-color;
-
 			}
       	}
   
@@ -47,6 +48,7 @@ html, body {
 			cursor: pointer;
 			min-width: 300px;
 			font-size: 20px;
+			transition: .5s;
 	
 			&:hover {
 				background-color: @button-hover-color;
@@ -69,7 +71,18 @@ html, body {
     }
 
 	.gear {
-		font-size: 500px;
+		font-size: 50px;
+		background-color: @button-color;
+		padding: 14px;
+		border-radius: 100%;
+		position: absolute;
+		top: 25px;
+		right: 25px;
 		transition: .5s;
+		cursor: pointer;
+
+		&:hover {
+			background-color: @button-hover-color;
+		}
 	}
 }

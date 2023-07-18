@@ -20,12 +20,7 @@ async function displayQuestions() {
         submit.addEventListener('click', () => {
             let value = number.value;
             if(value !== '' && value <= all_questions.length && value > 0) {    
-// background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(255,253,245,1) 90%);          
                 display_color.style.background = all_couleurs[value - 1];
-                // display_color.style.background = "linear-gradient(180deg, " + all_couleurs[value - 1] + " 0%, rgba(255,253,245,1) 90%)";
-                // display_color.style.background = "linear-gradient(331deg, rgba(255,253,245,1) 65%, " + all_couleurs[value - 1] + " 100%)";
-                // document.querySelector('body').style.background = "linear-gradient(331deg, rgba(255,253,245,1) 65%, " + all_couleurs[value - 1] + " 100%)";
-                // background: linear-gradient(331deg, rgba(255,253,245,1) 65%, rgba(255,0,0,1) 100%);
                 display.innerHTML = all_questions[value - 1];
             }
         });

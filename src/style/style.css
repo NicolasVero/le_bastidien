@@ -49,6 +49,8 @@ body .form {
   align-items: center;
   flex-wrap: wrap;
   gap: 15px;
+  margin-top: 125px;
+  margin-bottom: 25px;
 }
 html .form #number,
 body .form #number {
@@ -83,6 +85,7 @@ body .form #submit {
   cursor: pointer;
   min-width: 300px;
   font-size: 20px;
+  transition: 0.5s;
 }
 html .form #submit:hover,
 body .form #submit:hover {
@@ -104,5 +107,17 @@ body #display {
 }
 html .gear,
 body .gear {
-  font-size: 500px;
+  font-size: 50px;
+  background-color: #89D9A9;
+  padding: 14px;
+  border-radius: 100%;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+html .gear:hover,
+body .gear:hover {
+  background-color: #9CF8A7;
 }
