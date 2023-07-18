@@ -8,10 +8,13 @@ async function displayQuestions() {
         console.log(all_questions);
         document.getElementById("submit").addEventListener('click', () => {
             let value = document.getElementById("number").value;
-            if(value >= all_questions.length)
-                value = Math.floor(Math.random() * all_questions.length);
+            console.log(value)
+            if(value > all_questions.length || value < 1 || value === '') {
+                value = Math.floor((Math.random() * all_questions.length) + 1);
+                console.log("Modif val : " + value)
+            }
 
-            document.getElementById("display").innerHTML = all_questions[value];
+            document.getElementById("display").innerHTML = all_questions[value - 1];
         });
     } catch (err) {
         console.error("Questions non reçues : " + err);

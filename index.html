@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mon fichier principal</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<title>App Heloise</title>
+	<link rel="stylesheet" href="src/style/style.css">
 </head>
 <body>
-  <div id="display"></div>
-  <input type="text" name="number" id="number">
-  <button id="submit">Soumettre</button>
-  <script type="module" src="src/scripts/load_json.js"></script>
-  <script type="module" src="src/scripts/give_question.js"></script>
+	<div class="form">
+		<input type="text" name="number" id="number">
+		<button id="submit">Soumettre</button>
+	</div>
+	<div id="display"></div>
+
+
+
+	<script type="module" src="src/scripts/load_json.js"></script>
+	<script type="module" src="src/scripts/give_question.js"></script>
 </body>
 </html>
