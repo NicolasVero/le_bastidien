@@ -1,32 +1,6 @@
 // out : ../style/style.css
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&family=Ubuntu:wght@300;400;500;700&display=swap');
-
-* {
-    font-family: 'Ubuntu', 'Sans-serif';
-}
-
-body {
-    // background: rgb(42,130,172);
-    // background: linear-gradient(130deg, rgba(42,130,172,1) 17%, rgba(123,83,168,1) 69%, rgba(191,43,165,1) 100%);
-    background-color: rgb(101, 102, 137);
-	
-	.form {
-
-		display: flex;
-		flex-direction: column;
-		// max-width: 50vw;
-		align-items: center;
-		flex-wrap: wrap;
-
-		#submit {
-			background-color: blue;
-			color: white;
-			border: none;
-			padding: 15px;
-			font-weight: 800;
-			border-radius: 20px;
-		}
-	}
-
-}
+@import url("imports/colors.less");
+@import url("imports/components.less");
+@import url("imports/fonts.less");
+@import url("imports/index.less");

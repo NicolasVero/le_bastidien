@@ -6,6 +6,11 @@ async function displayQuestions() {
         const all_questions = await charger_json();
 
         console.log(all_questions);
+
+        document.getElementById("number").addEventListener('click', () => {
+            document.getElementById("number").value = '';
+        });
+
         document.getElementById("submit").addEventListener('click', () => {
             let value = document.getElementById("number").value;
             console.log(value)

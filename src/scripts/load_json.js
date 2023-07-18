@@ -6,9 +6,9 @@ export function charger_json() {
 
             let questions = [];
 
-            for (let i = 0; i < jsonData.questions.length; i++) {
+            for (let i = 0; i < jsonData.questions.length; i++) 
                 questions.push(jsonData.questions[i].texte);
-            }
+            
             return questions;
         })
         .catch(err => {
