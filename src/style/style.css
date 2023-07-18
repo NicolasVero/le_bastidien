@@ -102,3 +102,7 @@ body #display {
   border-top: 2px solid black;
   padding-top: 10px;
 }
+html .gear,
+body .gear {
+  font-size: 500px;
+}
