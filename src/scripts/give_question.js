@@ -2,10 +2,14 @@ import { charger_json } from './load_json.js';
 
 async function displayQuestions() {
     try {
-        const all_questions = await charger_json();
-        const [number, submit, display] = [
+        const data_json = await charger_json();
+        const all_couleurs = data_json[0];
+        const all_questions = data_json[1];
+
+        const [number, submit, display_color, display] = [
             document.getElementById("number"), 
             document.getElementById("submit"), 
+            document.getElementById("display-color"),
             document.getElementById("display")
         ];
 
@@ -15,11 +19,10 @@ async function displayQuestions() {
 
         submit.addEventListener('click', () => {
             let value = number.value;
-
-            if(value > all_questions.length || value < 1 || value === '') 
-                value = Math.floor((Math.random() * all_questions.length) + 1);
-            
-            display.innerHTML = all_questions[value - 1];
+            if(value !== '' && value <= all_questions.length && value > 0) {              
+                display_color.style.background = all_couleurs[value - 1];
+                display.innerHTML = all_questions[value - 1];
+            }
         });
         
     } catch (err) {

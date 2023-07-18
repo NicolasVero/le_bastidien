@@ -4,7 +4,9 @@
     font-family: 'Ubuntu', 'Sans-serif';
 }
   
-body {
+html, body {
+	margin: 0;
+	padding: 0;
     background-color: @background-color;
   
     .form {
@@ -51,6 +53,12 @@ body {
 			}
 		}
     }
+
+	#display-color {
+		border: 1px solid black;
+		width: 100vw;
+		height: 50px;
+	}
   
     #display {
         color: @main-color;
