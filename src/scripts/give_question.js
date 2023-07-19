@@ -6,6 +6,8 @@ async function displayQuestions() {
         const all_couleurs  = data_json[0];
         const all_questions = data_json[1];
 
+        console.log(all_couleurs)
+
         const [number, submit, display_color, display, shuffle] = [
             document.getElementById("number"), 
             document.getElementById("submit"), 
