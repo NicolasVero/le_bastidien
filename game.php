@@ -15,8 +15,9 @@
 	<meta charset="UTF-8">
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-	<title>App Heloise</title>
+	<title>Le Bastidien</title>
 	<link rel="stylesheet" href="src/style/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 </head>
 <body>
@@ -31,8 +32,11 @@
 		<input type="number" name="number" id="number" min="1" max="86" placeholder="1 - 86">
 		<button id="submit" class="main">Avoir mon gage</button>
 	</div>
-	<div id="display-color"></div>
-	<div id="display"></div>
+
+	<div class="carte not-show">
+		<div id="display-color"></div>
+		<div id="display"></div>
+	</div>
 
 	<script type="module" src="src/scripts/load_json.js"></script>
 	<script type="module" src="src/scripts/give_question.js"></script>

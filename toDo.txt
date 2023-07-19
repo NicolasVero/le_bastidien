@@ -1,4 +1,9 @@
-rajouter systeme notation gage (de 1 a 5 (1 facile / 5 dur))
 //! armoniser nom variables --> tout en anglais
 //! verifier ; fin de ligne
 //! verifier tout le temps utiliser meme cotte ('' ou "") mais pas les deux
+
+message quand clic sur melange
+case 90
+engrenage en blanc
+dark mode
+rajouter systeme notation gage (de 1 a 3 (1 facile / 3 dur))

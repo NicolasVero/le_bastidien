@@ -37,19 +37,39 @@ body .form {
   margin-top: 125px;
   margin-bottom: 25px;
 }
-html #display-color,
-body #display-color {
+html .carte,
+body .carte {
   border: 1px solid black;
   width: 35vw;
-  height: 50px;
   margin: 0 auto;
   min-width: 300px;
+}
+html .carte.not-show,
+body .carte.not-show {
+  opacity: 0;
+}
+html .carte h2,
+body .carte h2 {
+  margin-top: 0;
+}
+html #display-color,
+body #display-color {
+  border-bottom: 1px solid black;
+  width: calc(35vw - 2px);
+  height: 85px;
+  margin: 0 auto;
+  min-width: 298px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  font-size: 40px;
 }
 html #display,
 body #display {
   color: black;
   font-size: 24px;
-  padding-top: 10px;
+  padding: 25px;
   width: 35vw;
   margin: 0 auto;
   min-width: 300px;
@@ -57,7 +77,7 @@ body #display {
 html .gear,
 body .gear {
   font-size: 75px;
-  background-color: #89D9A9;
+  background-color: #39955C;
   padding: 14px;
   border-radius: 100%;
   position: absolute;
@@ -68,7 +88,7 @@ body .gear {
 }
 html .gear:hover,
 body .gear:hover {
-  background-color: #9CF8A7;
+  background-color: #1e6f3d;
 }
 html #parametres,
 body #parametres {
@@ -103,13 +123,11 @@ body #vail.active {
   display: block;
 }
 @media (max-width: 768px) {
-  /* Modifiez les propriétés pour s'adapter aux téléphones */
   html,
   body {
     position: relative;
     height: 100vh !important;
     overflow: hidden !important;
-    /* Empêche le défilement vertical */
   }
   html h2,
   body h2 {
@@ -118,29 +136,24 @@ body #vail.active {
   html .form,
   body .form {
     margin-top: 65px !important;
-    /* Ajustez la marge pour une meilleure apparence sur les téléphones */
   }
   html #display-color,
   body #display-color,
   html #display,
   body #display {
-    width: 90vw;
-    /* Ajustez la largeur pour mieux s'adapter aux téléphones */
+    width: auto;
   }
   html .gear,
   body .gear {
     font-size: 50px;
-    /* Réduisez la taille de l'icône d'engrenage pour les téléphones */
   }
   html #parametres,
   body #parametres {
     padding: 130px 15px !important;
-    /* Ajustez le padding pour les téléphones */
   }
-  /* Vous pouvez ajouter d'autres ajustements ici en fonction de vos besoins */
 }
 button {
-  background-color: #89D9A9;
+  background-color: #39955C;
   color: white;
   border: none;
   font-weight: 800;
@@ -150,7 +163,7 @@ button {
   transition: 0.5s;
 }
 button:hover {
-  background-color: #9CF8A7;
+  background-color: #1e6f3d;
 }
 button.main {
   min-width: 300px;

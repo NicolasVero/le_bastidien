@@ -1,92 +1,92 @@
 {
 	"questions" : 
 	[
-		{ "titre" : "titre-01", "texte" : "première" },
-		{ "titre" : "titre-02", "texte" : "deuxième" },
-		{ "titre" : "titre-03", "texte" : "troisième" },
-		{ "titre" : "titre-04", "texte" : "quatrième" },
-		{ "titre" : "titre-05", "texte" : "cinquième" },
-		{ "titre" : "titre-06", "texte" : "sixième" },
-		{ "titre" : "titre-07", "texte" : "septième" },
-		{ "titre" : "titre-08", "texte" : "huitième" },
-		{ "titre" : "titre-09", "texte" : "neuvième" },
-		{ "titre" : "titre-10", "texte" : "dixième" },
-		{ "titre" : "titre-11", "texte" : "onzième" },
-		{ "titre" : "titre-12", "texte" : "douzième" },
-		{ "titre" : "titre-13", "texte" : "treizième" },
-		{ "titre" : "titre-14", "texte" : "quatorzième" },
-		{ "titre" : "titre-15", "texte" : "quinzième" },
-		{ "titre" : "titre-16", "texte" : "seizième" },
-		{ "titre" : "titre-17", "texte" : "dix-septième" },
-		{ "titre" : "titre-18", "texte" : "dix-huitième" },
-		{ "titre" : "titre-19", "texte" : "dix-neuvième" },
-		{ "titre" : "titre-20", "texte" : "vingtième" },
-		{ "titre" : "titre-21", "texte" : "vingt et unième" },
-		{ "titre" : "titre-22", "texte" : "vingt-deuxième" },
-		{ "titre" : "titre-23", "texte" : "vingt-troisième" },
-		{ "titre" : "titre-24", "texte" : "vingt-quatrième" },
-		{ "titre" : "titre-25", "texte" : "vingt-cinquième" },
-		{ "titre" : "titre-26", "texte" : "vingt-sixième" },
-		{ "titre" : "titre-27", "texte" : "vingt-septième" },
-		{ "titre" : "titre-28", "texte" : "vingt-huitième" },
-		{ "titre" : "titre-29", "texte" : "vingt-neuvième" },
-		{ "titre" : "titre-30", "texte" : "trentième" },
-		{ "titre" : "titre-31", "texte" : "trente et unième" },
-		{ "titre" : "titre-32", "texte" : "trente-deuxième" },
-		{ "titre" : "titre-33", "texte" : "trente-troisième" },
-		{ "titre" : "titre-34", "texte" : "trente-quatrième" },
-		{ "titre" : "titre-35", "texte" : "trente-cinquième" },
-		{ "titre" : "titre-36", "texte" : "trente-sixième" },
-		{ "titre" : "titre-37", "texte" : "trente-septième" },
-		{ "titre" : "titre-38", "texte" : "trente-huitième" },
-		{ "titre" : "titre-39", "texte" : "trente-neuvième" },
-		{ "titre" : "titre-40", "texte" : "quarantième" },
-		{ "titre" : "titre-41", "texte" : "quarante et unième" },
-		{ "titre" : "titre-42", "texte" : "quarante-deuxième" },
-		{ "titre" : "titre-43", "texte" : "quarante-troisième" },
-		{ "titre" : "titre-44", "texte" : "quarante-quatrième" },
-		{ "titre" : "titre-45", "texte" : "quarante-cinquième" },
-		{ "titre" : "titre-46", "texte" : "quarante-sixième" },
-		{ "titre" : "titre-47", "texte" : "quarante-septième" },
-		{ "titre" : "titre-48", "texte" : "quarante-huitième" },
-		{ "titre" : "titre-49", "texte" : "quarante-neuvième" },
-		{ "titre" : "titre-50", "texte" : "cinquantième" },
-		{ "titre" : "titre-51", "texte" : "cinquante et unième" },
-		{ "titre" : "titre-52", "texte" : "cinquante-deuxième" },
-		{ "titre" : "titre-53", "texte" : "cinquante-troisième" },
-		{ "titre" : "titre-54", "texte" : "cinquante-quatrième" },
-		{ "titre" : "titre-55", "texte" : "cinquante-cinquième" },
-		{ "titre" : "titre-56", "texte" : "cinquante-sixième" },
-		{ "titre" : "titre-57", "texte" : "cinquante-septième" },
-		{ "titre" : "titre-58", "texte" : "cinquante-huitième" },
-		{ "titre" : "titre-59", "texte" : "cinquante-neuvième" },
-		{ "titre" : "titre-60", "texte" : "soixantième" },
-		{ "titre" : "titre-61", "texte" : "soixante et unième" },
-		{ "titre" : "titre-62", "texte" : "soixante-deuxième" },
-		{ "titre" : "titre-63", "texte" : "soixante-troisième" },
-		{ "titre" : "titre-64", "texte" : "soixante-quatrième" },
-		{ "titre" : "titre-65", "texte" : "soixante-cinquième" },
-		{ "titre" : "titre-66", "texte" : "soixante-sixième" },
-		{ "titre" : "titre-67", "texte" : "soixante-septième" },
-		{ "titre" : "titre-68", "texte" : "soixante-huitième" },
-		{ "titre" : "titre-69", "texte" : "soixante-neuvième" },
-		{ "titre" : "titre-70", "texte" : "soixante-dixième" },
-		{ "titre" : "titre-71", "texte" : "soixante et onzième" },
-		{ "titre" : "titre-72", "texte" : "soixante-douzième" },
-		{ "titre" : "titre-73", "texte" : "soixante-treizième" },
-		{ "titre" : "titre-74", "texte" : "soixante-quatorzième" },
-		{ "titre" : "titre-75", "texte" : "soixante-quinzième" },
-		{ "titre" : "titre-76", "texte" : "soixante-seizième" },
-		{ "titre" : "titre-77", "texte" : "soixante-dix-septième" },
-		{ "titre" : "titre-78", "texte" : "soixante-dix-huitième" },
-		{ "titre" : "titre-79", "texte" : "soixante-dix-neuvième" },
-		{ "titre" : "titre-80", "texte" : "quatre-vingtième" },
-		{ "titre" : "titre-81", "texte" : "quatre-vingt-unième" },
-		{ "titre" : "titre-82", "texte" : "quatre-vingt-deuxième" },
-		{ "titre" : "titre-83", "texte" : "quatre-vingt-troisième" },
-		{ "titre" : "titre-84", "texte" : "quatre-vingt-quatrième" },
-		{ "titre" : "titre-85", "texte" : "quatre-vingt-cinquième" },
-		{ "titre" : "titre-86", "texte" : "quatre-vingt-sixième" }
+		{ "titre": "titre-01", "texte": "Tu es à la cascade, félicitations ! Bois une gorgée pour fêter ça.", "note": 1 },
+		{ "titre": "titre-02", "texte": "Tu es aux bottes de paille, félicitations ! Bois une gorgée pour fêter ça.", "note": 2 },
+		{ "titre": "titre-03", "texte": "Tu es à la table du stylo magique, félicitations ! Bois une gorgée pour fêter ça.", "note": 3 },
+		{ "titre": "titre-04", "texte": "Tu es à l'entrée du village, félicitations ! Bois une gorgée pour fêter ça.", "note": 0 },
+		{ "titre": "titre-05", "texte": "Tu es à la buvette, félicitations ! Bois une gorgée pour fêter ça.", "note": 0 },
+		{ "titre": "titre-06", "texte": "Tu es aux jeux, félicitations ! Bois une gorgée pour fêter ça.", "note": 0 },
+		{ "titre": "titre-07", "texte": "Tu es route de Cayra, félicitations ! Bois une gorgée pour fêter ça.", "note": 0 },
+		{ "titre": "titre-08", "texte": "Fatigué d'avoir couru devant l'indicateur de vitesse, fais une pause et passe ton tour. Bois de l'eau pour te réhydrater", "note": 0 },
+		{ "titre": "titre-09", "texte": "Tu es dans la Grand'rue de la grand'soif,", "note": 0 },
+		{ "titre": "titre-10", "texte": "Tu es dans la Grand'rue de la grand'soif,", "note": 0 },
+		{ "titre": "titre-11", "texte": "Tu es dans la Grand'rue de la grand'soif,", "note": 0 },
+		{ "titre": "titre-12", "texte": "Tu es dans la Grand'rue de la grand'soif,", "note": 0 },
+		{ "titre": "titre-13", "texte": "Tu es dans la Grand'rue de la grand'soif,", "note": 0 },
+		{ "titre": "titre-14", "texte": "Tu es dans la Grand'rue de la grand'soif,", "note": 0 },
+		{ "titre": "titre-15", "texte": "Tu es dans la Grand'rue de la grand'soif,", "note": 0 },
+		{ "titre": "titre-16", "texte": "Tu es dans la Grand'rue de la grand'soif,", "note": 0 },
+		{ "titre": "titre-17", "texte": "Tu es dans la Grand'rue de la grand'soif,", "note": 0 },
+		{ "titre": "titre-18", "texte": "Tu es dans la Grand'rue de la grand'soif,", "note": 0 },
+		{ "titre": "titre-19", "texte": "En plein canicule, le Countirou est à sec, remplissez-le. Shot pour tout le monde ", "note": 0 },
+		{ "titre": "titre-20", "texte": "Tu es à proximité du Countirou, bois de l'eau.", "note": 0 },
+		{ "titre": "titre-21", "texte": "Invente une phrase qui pourrait provenir du Didictionnaire. Si les autres ne la valident pas, recule de trois cases.", "note": 0 },
+		{ "titre": "titre-22", "texte": "Tu viens de perdre au Président, en bon trou du cul, donne tes deux meilleures gorgées à qui tu veux", "note": 0 },
+		{ "titre": "titre-23", "texte": "Tu es à proximité des bottes de paille, les étoiles filantes fusent dans le ciel. Fais un vœux ! Dommage, ta bonne étoile était distraite, recule de trois cases et bois une gorgée pour la peine.", "note": 0 },
+		{ "titre": "titre-24", "texte": "Tu es à proximité des bottes de paille, les étoiles filantes fusent dans le ciel. Fais un vœux ! Bravo, ta bonne étoile t’a entendu, distribue quatre gorgées.", "note": 0 },
+		{ "titre": "titre-25", "texte": "Tu es tombé entre deux bottes de paille. Si quelqu'un accepte de t'aider à remonter, vous partagez deux gorgées. Dans le cas contraire, bois les deux gorgées et démerde-toi pour remonter tout seul.", "note": 0 },
+		{ "titre": "titre-26", "texte": "Tu es à proximité de la table du stylo magique. À vos stylos.", "note": 0 },
+		{ "titre": "titre-27", "texte": "Tu es à proximité de la table du stylo magique. À vos stylos.", "note": 0 },
+		{ "titre": "titre-28", "texte": "Tu es à proximité de la buvette, en plein before. Bois deux gorgées.", "note": 0 },
+		{ "titre": "titre-29", "texte": "Tu t'arrêtes en pleine nuit pour jeter tes innombrables bouteilles de verre mais tu fais trop de bruit et réveille tout le voisinage. Recule de deux cases et bois une gorgée pour la peine.", "note": 0 },
+		{ "titre": "titre-30", "texte": "Tu te rapproches de la buvette, chante comme un mec bourré (peut-être l’es-tu déjà…) avec de l’eau dans la bouche.", "note": 0 },
+		{ "titre": "titre-31", "texte": "Tu es à proximité du terrain de pétanque, une chaise de camping traîne par là! Tu décides de t'y reposer mais finis par t'endormir. Passe deux tours.", "note": 0 },
+		{ "titre": "titre-32", "texte": "Tu es à proximité du terrain de jeux, tu te croirais presque sur le tourniquet. Tourne sur toi-même pendant 20 secondes.", "note": 0 },
+		{ "titre": "titre-33", "texte": "Scotché devant Élite, tu as raté la meilleure partie de pétanque de ta vie. Bois deux gorgées pour la peine.", "note": 0 },
+		{ "titre": "titre-34", "texte": "Tu es à proximité du Grand Tour, échauffe-toi en faisant cinq squats. Pense aussi à t’hydrater, bois 2 gorgées.", "note": 0 },
+		{ "titre": "titre-35", "texte": "Tu es à proximité du Grand Tour, échauffe-toi en faisant cinq pompes. Pense aussi à t’hydrater, bois deux gorgées.", "note": 0 },
+		{ "titre": "titre-36", "texte": "trente-sixième", "note": 0 },
+		{ "titre": "titre-37", "texte": "trente-septième", "note": 0 },
+		{ "titre": "titre-38", "texte": "trente-huitième", "note": 0 },
+		{ "titre": "titre-39", "texte": "trente-neuvième", "note": 0 },
+		{ "titre": "titre-40", "texte": "quarantième", "note": 0 },
+		{ "titre": "titre-41", "texte": "quarante et unième", "note": 0 },
+		{ "titre": "titre-42", "texte": "quarante-deuxième", "note": 0 },
+		{ "titre": "titre-43", "texte": "quarante-troisième", "note": 0 },
+		{ "titre": "titre-44", "texte": "quarante-quatrième", "note": 0 },
+		{ "titre": "titre-45", "texte": "quarante-cinquième", "note": 0 },
+		{ "titre": "titre-46", "texte": "quarante-sixième", "note": 0 },
+		{ "titre": "titre-47", "texte": "quarante-septième", "note": 0 },
+		{ "titre": "titre-48", "texte": "quarante-huitième", "note": 0 },
+		{ "titre": "titre-49", "texte": "quarante-neuvième", "note": 0 },
+		{ "titre": "titre-50", "texte": "cinquantième", "note": 0 },
+		{ "titre": "titre-51", "texte": "cinquante et unième", "note": 0 },
+		{ "titre": "titre-52", "texte": "cinquante-deuxième", "note": 0 },
+		{ "titre": "titre-53", "texte": "cinquante-troisième", "note": 0 },
+		{ "titre": "titre-54", "texte": "cinquante-quatrième", "note": 0 },
+		{ "titre": "titre-55", "texte": "cinquante-cinquième", "note": 0 },
+		{ "titre": "titre-56", "texte": "cinquante-sixième", "note": 0 },
+		{ "titre": "titre-57", "texte": "cinquante-septième", "note": 0 },
+		{ "titre": "titre-58", "texte": "cinquante-huitième", "note": 0 },
+		{ "titre": "titre-59", "texte": "cinquante-neuvième", "note": 0 },
+		{ "titre": "titre-60", "texte": "soixantième", "note": 0 },
+		{ "titre": "titre-61", "texte": "soixante et unième", "note": 0 },
+		{ "titre": "titre-62", "texte": "soixante-deuxième", "note": 0 },
+		{ "titre": "titre-63", "texte": "soixante-troisième", "note": 0 },
+		{ "titre": "titre-64", "texte": "soixante-quatrième", "note": 0 },
+		{ "titre": "titre-65", "texte": "soixante-cinquième", "note": 0 },
+		{ "titre": "titre-66", "texte": "soixante-sixième", "note": 0 },
+		{ "titre": "titre-67", "texte": "soixante-septième", "note": 0 },
+		{ "titre": "titre-68", "texte": "soixante-huitième", "note": 0 },
+		{ "titre": "titre-69", "texte": "soixante-neuvième", "note": 0 },
+		{ "titre": "titre-70", "texte": "soixante-dixième", "note": 0 },
+		{ "titre": "titre-71", "texte": "soixante et onzième", "note": 0 },
+		{ "titre": "titre-72", "texte": "soixante-douzième", "note": 0 },
+		{ "titre": "titre-73", "texte": "soixante-treizième", "note": 0 },
+		{ "titre": "titre-74", "texte": "soixante-quatorzième", "note": 0 },
+		{ "titre": "titre-75", "texte": "soixante-quinzième", "note": 0 },
+		{ "titre": "titre-76", "texte": "soixante-seizième", "note": 0 },
+		{ "titre": "titre-77", "texte": "soixante-dix-septième", "note": 0 },
+		{ "titre": "titre-78", "texte": "soixante-dix-huitième", "note": 0 },
+		{ "titre": "titre-79", "texte": "soixante-dix-neuvième", "note": 0 },
+		{ "titre": "titre-80", "texte": "quatre-vingtième", "note": 0 },
+		{ "titre": "titre-81", "texte": "quatre-vingt-unième", "note": 0 },
+		{ "titre": "titre-82", "texte": "quatre-vingt-deuxième", "note": 0 },
+		{ "titre": "titre-83", "texte": "quatre-vingt-troisième", "note": 0 },
+		{ "titre": "titre-84", "texte": "quatre-vingt-quatrième", "note": 0 },
+		{ "titre": "titre-85", "texte": "quatre-vingt-cinquième", "note": 0 },
+		{ "titre": "titre-86", "texte": "quatre-vingt-sixième", "note": 0 }
 	],
 
 	"couleurs": [
@@ -178,3 +178,47 @@
 		{ "case": 86, "couleur": "#AD4C79" }
 	]
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

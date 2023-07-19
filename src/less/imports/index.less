@@ -21,18 +21,39 @@ html, body {
 		margin-bottom: 25px;
     }
 
-	#display-color {
+	.carte {
 		border: 1px solid black;
 		width: 35vw;
-		height: 50px;
 		margin: 0 auto;
 		min-width: 300px;
+
+		&.not-show {
+			opacity: 0;
+		}
+
+		h2 {
+			margin-top: 0;
+		}
+	}
+
+
+	#display-color {
+		border-bottom: 1px solid black;
+		width: calc(35vw - 2px);
+		height: 85px;
+		margin: 0 auto;
+		min-width: 298px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 35px;
+		font-size: 40px;
 	}
   
     #display {
         color: @main-color;
         font-size: 24px;
-        padding-top: 10px;
+		padding: 25px;
 		width: 35vw;
 		margin: 0 auto;
 		min-width: 300px;

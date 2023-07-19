@@ -10,7 +10,7 @@
     
     <?php
 
-        $password = "mdp"; 
+        $password = "Heloise";
         $message = "";
 
         if ($_SERVER["REQUEST_METHOD"] === "POST") {
@@ -29,7 +29,6 @@
     <div class="form-container">
         <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
             <h1>Authentification</h1>
-            <!-- <label for="password">Mot de passe :</label> -->
             <input type="password" name="password" id="password" required>
             <button class="main" type="submit">Soumettre</button>
         </form>
