@@ -2,13 +2,15 @@
 
 * {
     font-family: 'Ubuntu', 'Sans-serif';
+	box-sizing: border-box;
 }
   
 html, body {
 	margin: 0;
 	padding: 0;
     background-color: @background-color;
-  
+	overflow-x: hidden;
+
     .form {
 		display: flex;
 		flex-direction: column;
@@ -71,7 +73,7 @@ html, body {
     }
 
 	.gear {
-		font-size: 50px;
+		font-size: 75px;
 		background-color: @button-color;
 		padding: 14px;
 		border-radius: 100%;
@@ -84,5 +86,19 @@ html, body {
 		&:hover {
 			background-color: @button-hover-color;
 		}
+	}
+
+	#parametres {
+		height: 100vh;
+		width: @parametres-size;
+		background-color: red;
+		position: absolute;
+		right: -@parametres-size;
+		top: 0;
+		transition: .8s;
+	}
+
+	#parametres.active {
+		transform: translateX(-@parametres-size);
 	}
 }
