@@ -1,3 +1,18 @@
+button {
+  background-color: #89D9A9;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-weight: 800;
+  border-radius: 20px;
+  cursor: pointer;
+  min-width: 300px;
+  font-size: 20px;
+  transition: 0.5s;
+}
+button:hover {
+  background-color: #9CF8A7;
+}
 @font-face {
   font-family: 'Outfit';
   font-style: normal;
@@ -75,23 +90,6 @@ html .form #number:focus,
 body .form #number:focus {
   outline: none;
   border-bottom: 3px solid black;
-}
-html .form #submit,
-body .form #submit {
-  background-color: #89D9A9;
-  color: white;
-  border: none;
-  padding: 15px;
-  font-weight: 800;
-  border-radius: 20px;
-  cursor: pointer;
-  min-width: 300px;
-  font-size: 20px;
-  transition: 0.5s;
-}
-html .form #submit:hover,
-body .form #submit:hover {
-  background-color: #9CF8A7;
 }
 html #display-color,
 body #display-color {

@@ -1,6 +1,6 @@
 const [gear, parametres] = [
     document.querySelector('.gear'),
-    document.querySelector('#parametres')
+    document.querySelector('#parametres'),
 ];
 
 let rotation = 0;
@@ -15,3 +15,4 @@ gear.addEventListener('click', () => {
 	else
 		parametres.classList.add('active');
 });
+
