@@ -5,7 +5,6 @@ async function displayQuestions() {
         const data_json     = await charger_json();
         const all_couleurs  = data_json[0];
         const all_questions = data_json[1];
-        console.log(all_questions)
 
         const [number, submit, display_color, display, shuffle] = [
             document.getElementById("number"), 
@@ -24,8 +23,6 @@ async function displayQuestions() {
         });
 
         submit.addEventListener('click', () => {
-        console.log(all_questions)
-
             let value = number.value;
             if(value !== '' && value <= all_questions.length && value > 0) {    
                 display_color.style.background = all_couleurs[value - 1];

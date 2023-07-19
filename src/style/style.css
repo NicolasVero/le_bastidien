@@ -84,6 +84,9 @@ body .form #number {
   color: black;
   font-size: 45px;
   font-weight: 800;
+  min-width: 300px;
+  outline: none;
+  zoom: 1;
 }
 html .form #number::-webkit-outer-spin-button,
 body .form #number::-webkit-outer-spin-button,
@@ -103,6 +106,7 @@ body #display-color {
   width: 35vw;
   height: 50px;
   margin: 0 auto;
+  min-width: 300px;
 }
 html #display,
 body #display {
@@ -110,7 +114,8 @@ body #display {
   font-size: 24px;
   padding-top: 10px;
   width: 35vw;
-  margin: 45px auto;
+  margin: 0 auto;
+  min-width: 300px;
 }
 html .gear,
 body .gear {
@@ -159,4 +164,20 @@ body #vail {
 html #vail.active,
 body #vail.active {
   display: block;
+}
+@media (max-width: 768px) {
+  html,
+  body {
+    overflow: auto;
+  }
+  #display-color,
+  #display {
+    width: 90vw;
+  }
+  .gear {
+    font-size: 50px;
+  }
+  #parametres {
+    padding: 80px 15px;
+  }
 }
