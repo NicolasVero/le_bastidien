@@ -24,7 +24,7 @@ gear.addEventListener('click', () => {
 get_json.addEventListener('click', () => {
 	let password = prompt('Demande d\'accès aux questions');
 	if(password === 'bastide')
-		window.open("src/datas/datas.json","_blank", null);
+		window.open("src/datas/json_access.php","_blank", null);
 });
 
 //! a debuguer 

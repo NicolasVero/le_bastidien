@@ -1,58 +1,20 @@
-button {
-  background-color: #89D9A9;
-  color: white;
-  border: none;
-  font-weight: 800;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 20px;
-  transition: 0.5s;
+.form-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
 }
-button:hover {
-  background-color: #9CF8A7;
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-button.main {
-  min-width: 300px;
-  padding: 15px;
+.form-container form h1 {
+  text-align: center;
 }
-button.second {
-  padding: 12px 30px;
-  height: 45px;
-}
-@font-face {
-  font-family: 'Outfit';
-  font-style: normal;
-  font-weight: 200;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/outfit/v11/QGYyz_MVcBeNP4NjuGObqx1XmO1I4bC1C4E.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoC1CzTtw.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/ubuntu/v20/4iCs6KVjbNBYlgo6eA.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoCjC3Ttw.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoCxCvTtw.ttf) format('truetype');
+.form-container form input {
+  max-width: 12vw !important;
 }
 * {
   font-family: 'Ubuntu', 'Sans-serif';
@@ -74,31 +36,6 @@ body .form {
   gap: 15px;
   margin-top: 125px;
   margin-bottom: 25px;
-}
-html .form #number,
-body .form #number {
-  background: transparent;
-  border: none;
-  border-bottom: 2px solid black;
-  text-align: center;
-  color: black;
-  font-size: 45px;
-  font-weight: 800;
-  min-width: 300px;
-  outline: none;
-  zoom: 1;
-}
-html .form #number::-webkit-outer-spin-button,
-body .form #number::-webkit-outer-spin-button,
-html .form #number::-webkit-inner-spin-button,
-body .form #number::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-html .form #number:focus,
-body .form #number:focus {
-  outline: none;
-  border-bottom: 3px solid black;
 }
 html #display-color,
 body #display-color {
@@ -201,4 +138,81 @@ body #vail.active {
     /* Ajustez le padding pour les téléphones */
   }
   /* Vous pouvez ajouter d'autres ajustements ici en fonction de vos besoins */
+}
+button {
+  background-color: #89D9A9;
+  color: white;
+  border: none;
+  font-weight: 800;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.5s;
+}
+button:hover {
+  background-color: #9CF8A7;
+}
+button.main {
+  min-width: 300px;
+  padding: 15px;
+}
+button.second {
+  padding: 12px 30px;
+  height: 45px;
+}
+input {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+  text-align: center;
+  color: black;
+  font-size: 45px;
+  font-weight: 800;
+  min-width: 300px;
+  outline: none;
+  zoom: 1;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input:focus {
+  outline: none;
+  border-bottom: 3px solid black;
+}
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/outfit/v11/QGYyz_MVcBeNP4NjuGObqx1XmO1I4bC1C4E.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoC1CzTtw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ubuntu/v20/4iCs6KVjbNBYlgo6eA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoCjC3Ttw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoCxCvTtw.ttf) format('truetype');
 }

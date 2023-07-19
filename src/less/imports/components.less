@@ -24,3 +24,26 @@ button {
         height: 45px;
     }
 }
+
+input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid @main-color;
+    text-align: center;
+    color: @main-color;
+    font-size: 45px;
+    font-weight: 800;
+    min-width: 300px;
+    outline: none;
+    zoom: 1;
+
+    &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    &:focus {
+        outline: none;
+        border-bottom: 3px solid @main-color;
+    }
+}

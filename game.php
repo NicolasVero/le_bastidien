@@ -1,3 +1,14 @@
+<?php
+	session_start();
+
+	if(!isset($_SESSION['access'])) {
+		header("Location: index.php");
+	} 
+
+	session_unset();
+	session_destroy();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
