@@ -4,6 +4,4 @@
 
 message quand clic sur melange
 case 90
-engrenage en blanc
 dark mode
-rajouter systeme notation gage (de 1 a 3 (1 facile / 3 dur))

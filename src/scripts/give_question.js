@@ -25,22 +25,23 @@ async function displayQuestions() {
         submit.addEventListener('click', () => {
 
             let value = number.value;
-            if(value !== '' && value <= all_questions.length && value > 0) {  
+            console.log(value)
+            
+            if(value === '90') value = 87;
+            if(value === '87') value = 90;
+            
+            if(value !== '' && value <= all_questions.length && value > 0 ) {  
 
                 let carte = document.querySelector('.carte');
                 if (carte.classList.contains('not-show')) 
                     carte.classList.remove('not-show');
-                    
+
                 display_color.style.background = all_couleurs[value - 1];
                 display_color.innerHTML = '';
 
-                console.log("change")
-                console.log(all_questions[value - 1][2])
-                for(let i = 0; i < all_questions[value - 1][2]; i++) {
-                    display_color.innerHTML += '<i class="fa-regular fa-star"></i>';
-                }
-                    
-
+                for(let i = 0; i < all_questions[value - 1][2]; i++) 
+                    display_color.innerHTML += '<i class="fa-solid fa-star"></i>';
+                
                 display.innerHTML = "<h2>" + all_questions[value - 1][0] + "<h2>";
                 display.innerHTML += all_questions[value - 1][1];
             }

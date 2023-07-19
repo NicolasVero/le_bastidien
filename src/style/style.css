@@ -43,6 +43,7 @@ body .carte {
   width: 35vw;
   margin: 0 auto;
   min-width: 300px;
+  margin-bottom: 30px;
 }
 html .carte.not-show,
 body .carte.not-show {
@@ -51,6 +52,10 @@ body .carte.not-show {
 html .carte h2,
 body .carte h2 {
   margin-top: 0;
+}
+html .carte i,
+body .carte i {
+  color: #fffdf5;
 }
 html #display-color,
 body #display-color {
@@ -76,7 +81,7 @@ body #display {
 }
 html .gear,
 body .gear {
-  font-size: 75px;
+  font-size: 45px;
   background-color: #39955C;
   padding: 14px;
   border-radius: 100%;
@@ -127,7 +132,8 @@ body #vail.active {
   body {
     position: relative;
     height: 100vh !important;
-    overflow: hidden !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
   }
   html h2,
   body h2 {
@@ -145,7 +151,7 @@ body #vail.active {
   }
   html .gear,
   body .gear {
-    font-size: 50px;
+    font-size: 25px;
   }
   html #parametres,
   body #parametres {
