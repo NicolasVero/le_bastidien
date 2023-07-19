@@ -1,20 +1,34 @@
 // out: false
 
 @media (max-width: 768px) {
-	html, body {
-	  overflow: auto; 
-	}
-  
-	#display-color,
-	#display {
-	  	width: 90vw;
+
+    /* Modifiez les propriétés pour s'adapter aux téléphones */
+    html, body {
+        position: relative;
+		height: 100vh !important;
+		overflow: hidden !important; /* Empêche le défilement vertical */
+		
+		h2 {
+			margin: 10px 0 !important;
+		}
+
+		.form {
+			margin-top: 65px !important; /* Ajustez la marge pour une meilleure apparence sur les téléphones */
+		}
+		
+		#display-color,
+		#display {
+			width: 90vw; /* Ajustez la largeur pour mieux s'adapter aux téléphones */
+		}
+		
+		.gear {
+			font-size: 50px; /* Réduisez la taille de l'icône d'engrenage pour les téléphones */
+		}
+		
+		#parametres {
+			padding: 130px 15px !important; /* Ajustez le padding pour les téléphones */
+		}
 	}
 
-	.gear {
-	  font-size: 50px; 
-	}
-  
-	#parametres {
-	  padding: 80px 15px;
-	}
+    /* Vous pouvez ajouter d'autres ajustements ici en fonction de vos besoins */
 }
