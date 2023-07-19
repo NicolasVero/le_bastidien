@@ -4,15 +4,23 @@ button {
     background-color: @button-color;
     color: white;
     border: none;
-    padding: 15px;
     font-weight: 800;
     border-radius: 20px;
     cursor: pointer;
-    min-width: 300px;
     font-size: 20px;
     transition: .5s;
 
     &:hover {
         background-color: @button-hover-color;
+    }
+
+    &.main {
+        min-width: 300px;
+        padding: 15px;
+    }
+
+    &.second {
+        padding: 12px 30px;
+        height: 45px;
     }
 }

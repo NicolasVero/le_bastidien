@@ -2,16 +2,22 @@ button {
   background-color: #89D9A9;
   color: white;
   border: none;
-  padding: 15px;
   font-weight: 800;
   border-radius: 20px;
   cursor: pointer;
-  min-width: 300px;
   font-size: 20px;
   transition: 0.5s;
 }
 button:hover {
   background-color: #9CF8A7;
+}
+button.main {
+  min-width: 300px;
+  padding: 15px;
+}
+button.second {
+  padding: 12px 30px;
+  height: 45px;
 }
 @font-face {
   font-family: 'Outfit';
@@ -57,7 +63,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #fffdf5;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 html .form,
 body .form {
@@ -94,16 +100,17 @@ body .form #number:focus {
 html #display-color,
 body #display-color {
   border: 1px solid black;
-  width: 100vw;
+  width: 35vw;
   height: 50px;
+  margin: 0 auto;
 }
 html #display,
 body #display {
   color: black;
   font-size: 24px;
-  margin-top: 20px;
-  border-top: 2px solid black;
   padding-top: 10px;
+  width: 35vw;
+  margin: 45px auto;
 }
 html .gear,
 body .gear {
@@ -124,14 +131,32 @@ body .gear:hover {
 html #parametres,
 body #parametres {
   height: 100vh;
-  width: 300px;
-  background-color: red;
+  width: 350px;
+  background-color: #fffdf5;
   position: absolute;
-  right: -300px;
+  right: -350px;
   top: 0;
   transition: 0.8s;
+  padding: 170px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
 }
 html #parametres.active,
 body #parametres.active {
-  transform: translateX(-300px);
+  box-shadow: 18px -1px 16px 27px #000000;
+  transform: translateX(-350px);
+}
+html #vail,
+body #vail {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  opacity: 0.5;
+  background-color: black;
+  position: absolute;
+}
+html #vail.active,
+body #vail.active {
+  display: block;
 }
