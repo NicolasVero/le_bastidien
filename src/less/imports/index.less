@@ -8,10 +8,8 @@
 html, body {
 	margin: 0;
 	padding: 0;
-    // background-color: @l-background-color;
 	overflow: hidden;
-	transition: .5s;
-
+	transition: @transition-duration;
 
     .form {
 		display: flex;
@@ -23,15 +21,19 @@ html, body {
 		margin-bottom: 25px;
     }
 
-	.carte {
-		// border: 1px solid black;
+	.card {
 		width: 35vw;
 		margin: 0 auto;
 		min-width: 300px;
 		margin-bottom: 30px;
+		box-shadow: -2px 3px 15px -1px #454545;
 
 		&.not-show {
 			opacity: 0;
+
+			* {
+				opacity: 0;
+			}
 		}
 
 		h2 {
@@ -41,7 +43,6 @@ html, body {
 
 
 	#display-color {
-		// border-bottom: 1px solid black;
 		width: calc(35vw - 2px);
 		height: 85px;
 		margin: 0 auto;
@@ -50,11 +51,10 @@ html, body {
 		justify-content: center;
 		align-items: center;
 		gap: 35px;
-		font-size: 40px;
+		font-size: @icon-size;
 	}
   
     #display {
-        // color: @main-color;
         font-size: 24px;
 		padding: 25px;
 		width: 35vw;
@@ -63,14 +63,14 @@ html, body {
     }
 
 	.gear {
-		font-size: 45px;
+		font-size: @icon-size;
 		background-color: @button-color;
 		padding: 14px;
 		border-radius: 100%;
 		position: absolute;
 		top: 25px;
 		right: 25px;
-		transition: .5s;
+		transition: @transition-duration;
 		cursor: pointer;
 
 		&:hover {
@@ -78,23 +78,21 @@ html, body {
 		}
 	}
 
-	#parametres {
+	#parameters {
 		height: 100vh;
-		width: @parametres-size;
-		// background-color: @background-color;
+		width: @parameters-size;
 		position: absolute;
-		right: -@parametres-size;
+		right: -@parameters-size;
 		top: 0;
-		transition: .8s;
+		transition: @transition-duration;
 		padding: 170px 30px;
 		display: flex;
 		flex-direction: column;
 		gap: 45px;
-	}
-	
-	#parametres.active {
-		// box-shadow: 18px -1px 16px 27px #000000;
-		transform: translateX(-@parametres-size);
+		
+		&.active {
+			transform: translateX(-@parameters-size);
+		}
 	}
 
 	#vail {
@@ -105,6 +103,7 @@ html, body {
 		background-color: black;
 		position: absolute;
 	
+
 		&.active {
 			display: block;
 		}
@@ -113,26 +112,25 @@ html, body {
 
 	.shuffle {
 		position: relative;
+		
+		&:after {
+			content: "Les gages ont été mélangés";
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			transform: translateX(-50%);
+			padding: 5px 10px;
+			border-radius: 5px;
+			font-size: 14px;
+			opacity: 0; 
+			width: 100%;
+			display: block;
+			pointer-events: none; 
+			transition: opacity @transition-duration ease; 
+		}
+		
+		&.show-message:after {
+			opacity: 1;
+		}
 	}
-	  
-
-	  .shuffle:after {
-		content: "Les gages ont été mélangés";
-		position: absolute;
-		top: 100%;
-		left: 50%;
-		transform: translateX(-50%);
-		padding: 5px 10px;
-		border-radius: 5px;
-		font-size: 14px;
-		opacity: 0; 
-		width: 100%;
-		display: block;
-		pointer-events: none; 
-		transition: opacity 0.3s ease; 
-	  }
-	  
-	  .shuffle.show-message:after {
-		opacity: 1;
-	  }
 }

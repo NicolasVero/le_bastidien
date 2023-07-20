@@ -1,5 +1,0 @@
-//! armoniser nom variables --> tout en anglais
-//! verifier ; fin de ligne
-//! verifier tout le temps utiliser meme cotte ('' ou "") mais pas les deux
-
-message quand clic sur melange

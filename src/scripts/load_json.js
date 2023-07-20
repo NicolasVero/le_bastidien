@@ -5,7 +5,7 @@ export function charger_json() {
         .then(jsonData => {
 
             let questions = [];
-            let couleurs = [];
+            let couleurs  = [];
 
             for (let i = 0; i < jsonData.questions.length; i++) {
                 couleurs.push(jsonData.couleurs[i].couleur);

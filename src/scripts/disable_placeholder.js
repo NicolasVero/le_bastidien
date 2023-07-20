@@ -1,9 +1,9 @@
-const input = document.querySelector("input");
+const input = document.querySelector('input');
 
-input.addEventListener("click", () => {
-    input.placeholder = "";
+input.addEventListener('click', () => {
+	input.placeholder = '';
 });
 
-input.addEventListener("blur", () => {
-  input.placeholder = "1 - 86";
+input.addEventListener('blur', () => {
+	input.placeholder = '1 - 86';
 });

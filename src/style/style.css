@@ -37,19 +37,24 @@ body .form {
   margin-top: 125px;
   margin-bottom: 25px;
 }
-html .carte,
-body .carte {
+html .card,
+body .card {
   width: 35vw;
   margin: 0 auto;
   min-width: 300px;
   margin-bottom: 30px;
+  box-shadow: -2px 3px 15px -1px #454545;
 }
-html .carte.not-show,
-body .carte.not-show {
+html .card.not-show,
+body .card.not-show {
   opacity: 0;
 }
-html .carte h2,
-body .carte h2 {
+html .card.not-show *,
+body .card.not-show * {
+  opacity: 0;
+}
+html .card h2,
+body .card h2 {
   margin-top: 0;
 }
 html #display-color,
@@ -74,7 +79,7 @@ body #display {
 }
 html .gear,
 body .gear {
-  font-size: 45px;
+  font-size: 40px;
   background-color: #39955C;
   padding: 14px;
   border-radius: 100%;
@@ -88,21 +93,21 @@ html .gear:hover,
 body .gear:hover {
   background-color: #1e6f3d;
 }
-html #parametres,
-body #parametres {
+html #parameters,
+body #parameters {
   height: 100vh;
   width: 350px;
   position: absolute;
   right: -350px;
   top: 0;
-  transition: 0.8s;
+  transition: 0.5s;
   padding: 170px 30px;
   display: flex;
   flex-direction: column;
   gap: 45px;
 }
-html #parametres.active,
-body #parametres.active {
+html #parameters.active,
+body #parameters.active {
   transform: translateX(-350px);
 }
 html #vail,
@@ -136,7 +141,7 @@ body .shuffle:after {
   width: 100%;
   display: block;
   pointer-events: none;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.5s ease;
 }
 html .shuffle.show-message:after,
 body .shuffle.show-message:after {
@@ -168,18 +173,18 @@ body .shuffle.show-message:after {
   body .gear {
     font-size: 25px;
   }
-  html #parametres,
-  body #parametres {
+  html #parameters,
+  body #parameters {
     padding: 130px 15px !important;
   }
 }
 body.light {
   background-color: #fffdf5;
 }
-body.light .carte {
+body.light .card {
   border: 1px solid black;
 }
-body.light .carte i {
+body.light .card i {
   color: #fffdf5;
 }
 body.light #display {
@@ -188,10 +193,10 @@ body.light #display {
 body.light #display-color {
   border-bottom: 1px solid black;
 }
-body.light #parametres {
+body.light #parameters {
   background-color: #fffdf5;
 }
-body.light #parametres.active {
+body.light #parameters.active {
   box-shadow: 18px -1px 16px 27px black;
 }
 body.light input {
@@ -207,10 +212,10 @@ body.light .shuffle:after {
 body.dark {
   background-color: #0a0a0a;
 }
-body.dark .carte {
+body.dark .card {
   border: 1px solid #e0e0e0;
 }
-body.dark .carte i {
+body.dark .card i {
   color: #0a0a0a;
 }
 body.dark #display {
@@ -219,10 +224,10 @@ body.dark #display {
 body.dark #display-color {
   border-bottom: 1px solid #e0e0e0;
 }
-body.dark #parametres {
+body.dark #parameters {
   background-color: #0a0a0a;
 }
-body.dark #parametres.active {
+body.dark #parameters.active {
   box-shadow: 18px -1px 16px 27px #e0e0e0;
 }
 body.dark input {

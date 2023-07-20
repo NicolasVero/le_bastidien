@@ -1,9 +1,9 @@
-const [gear, parametres, get_json, swicth_theme, vail] = [
-	document.querySelector('.gear'),
-	document.querySelector('#parametres'),
-	document.querySelector('.get_json'),
+const [gear, parameters, get_json, swicth_theme, vail] = [
+	document.querySelector('.gear'        ),
+	document.querySelector('#parameters'  ),
+	document.querySelector('.get_json'    ),
 	document.querySelector('.swicth_theme'),
-	document.querySelector('#vail')
+	document.querySelector('#vail'        )
 ];
 
 let rotation = 0;
@@ -13,11 +13,11 @@ gear.addEventListener('click', () => {
 	gear.style.transform = `rotate(${rotation}deg)`;
 	gear.style.transition = ".5s";
 
-	if (parametres.classList.contains("active")) {
-		parametres.classList.remove('active');
+	if (parameters.classList.contains('active')) {
+		parameters.classList.remove('active');
 		vail.classList.remove('active');
 	} else {
-		parametres.classList.add('active');
+		parameters.classList.add('active');
 		vail.classList.add('active');
 	}
 });
@@ -25,7 +25,7 @@ gear.addEventListener('click', () => {
 get_json.addEventListener('click', () => {
 	let password = prompt('Demande d\'accès aux questions');
 	if(password === 'Amelie')
-		window.open("src/datas/datas.json","_blank", null);
+		window.open('src/datas/datas.json','_blank', null);
 });
 
 swicth_theme.addEventListener('click', () => {
@@ -39,13 +39,3 @@ swicth_theme.addEventListener('click', () => {
 		body.classList.remove('dark');
 	}
 });
-
-//! a debuguer 
-// window.addEventListener('click', (e) => {
-// 	if (e.target !== parametres && e.target !== gear && document.contains(e.target)) {
-// 		if (e.target.closest('.parametres') === parametres || parametres.contains(e.target)) {
-// 			return;
-// 		}
-// 		parametres.classList.remove('active');
-// 	}
-// });

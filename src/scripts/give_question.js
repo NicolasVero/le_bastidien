@@ -3,15 +3,15 @@ import { charger_json } from './load_json.js';
 async function displayQuestions() {
     try {
         const data_json     = await charger_json();
-        const all_couleurs  = data_json[0];
+        const all_colors    = data_json[0];
         const all_questions = data_json[1];
 
         const [number, submit, display_color, display, shuffle] = [
-            document.getElementById("number"), 
-            document.getElementById("submit"), 
-            document.getElementById("display-color"),
-            document.getElementById("display"),
-            document.querySelector('.shuffle')
+            document.getElementById('number'       ), 
+            document.getElementById('submit'       ), 
+            document.getElementById('display-color'),
+            document.getElementById('display'      ),
+            document.querySelector ('.shuffle'     )
         ];
 
         shuffle.addEventListener('click', () => {
@@ -36,23 +36,23 @@ async function displayQuestions() {
             
             if(value !== '' && value <= all_questions.length && value > 0 ) {  
 
-                let carte = document.querySelector('.carte');
-                if (carte.classList.contains('not-show')) 
-                    carte.classList.remove('not-show');
+                let card = document.querySelector('.card');
+                if (card.classList.contains('not-show')) 
+                    card.classList.remove('not-show');
 
-                display_color.style.background = all_couleurs[value - 1];
+                display_color.style.background = all_colors[value - 1];
                 display_color.innerHTML = '';
 
                 for(let i = 0; i < all_questions[value - 1][2]; i++) 
                     display_color.innerHTML += '<i class="fa-solid fa-star"></i>';
                 
-                display.innerHTML = "<h2>" + all_questions[value - 1][0] + "<h2>";
+                display.innerHTML = '<h2>' + all_questions[value - 1][0] + '<h2>';
                 display.innerHTML += all_questions[value - 1][1];
             }
         });
         
     } catch (err) {
-        console.error("Questions non reçues : " + err);
+        console.error(`Questions non reçues : ${err}`);
     }
 }
 

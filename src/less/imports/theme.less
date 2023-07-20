@@ -3,9 +3,9 @@
 body.light {
     background-color: @l-background-color;
     
-    .carte{
+    .card{
 
-		border: 1px solid @l-main-color;
+		border: @card-border-size solid @l-main-color;
 
         i {
             color: @l-background-color;
@@ -17,10 +17,10 @@ body.light {
     }
 
     #display-color {
-		border-bottom: 1px solid @l-main-color;
+		border-bottom: @card-border-size solid @l-main-color;
     }
 
-    #parametres {
+    #parameters {
 		background-color: @l-background-color;
 
         &.active {
@@ -47,9 +47,9 @@ body.light {
 body.dark {
     background-color: @d-background-color;
     
-    .carte{
+    .card{
 
-		border: 1px solid @d-main-color;
+		border: @card-border-size solid @d-main-color;
 
         i {
             color: @d-background-color;
@@ -61,10 +61,10 @@ body.dark {
     }
 
     #display-color {
-		border-bottom: 1px solid @d-main-color;
+		border-bottom: @card-border-size solid @d-main-color;
     }
 
-    #parametres {
+    #parameters {
 		background-color: @d-background-color;
 
         &.active {
