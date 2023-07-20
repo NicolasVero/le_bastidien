@@ -11,7 +11,7 @@
     <?php
 
         $password = "Heloise";
-        $message = "";
+        $message  = "";
 
         if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $userPassword = isset($_POST["password"]) ? $_POST["password"] : "";

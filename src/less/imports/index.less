@@ -11,6 +11,7 @@ html, body {
 	overflow: hidden;
 	transition: @transition-duration;
 
+	// Formulaire
     .form {
 		display: flex;
 		flex-direction: column;
@@ -21,6 +22,7 @@ html, body {
 		margin-bottom: 25px;
     }
 
+	// Gestion des cartes 
 	.card {
 		width: 35vw;
 		margin: 0 auto;
@@ -39,29 +41,33 @@ html, body {
 		h2 {
 			margin-top: 0;
 		}
+
+		i {
+			transition: @transition-duration;
+		}
+		
+		#display-color {
+			width: calc(35vw - 2px);
+			height: 85px;
+			margin: 0 auto;
+			min-width: 298px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 35px;
+			font-size: @icon-size;
+		}
+		
+		#display {
+			font-size: 24px;
+			padding: 25px;
+			width: 35vw;
+			margin: 0 auto;
+			min-width: 300px;
+		}
 	}
-
-
-	#display-color {
-		width: calc(35vw - 2px);
-		height: 85px;
-		margin: 0 auto;
-		min-width: 298px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		gap: 35px;
-		font-size: @icon-size;
-	}
-  
-    #display {
-        font-size: 24px;
-		padding: 25px;
-		width: 35vw;
-		margin: 0 auto;
-		min-width: 300px;
-    }
-
+	
+	// Gestion des parametres 
 	.gear {
 		font-size: @icon-size;
 		background-color: @button-color;
@@ -110,6 +116,7 @@ html, body {
 	}
 
 
+	// Texte melange des cartes
 	.shuffle {
 		position: relative;
 		

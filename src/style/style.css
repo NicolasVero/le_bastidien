@@ -57,8 +57,12 @@ html .card h2,
 body .card h2 {
   margin-top: 0;
 }
-html #display-color,
-body #display-color {
+html .card i,
+body .card i {
+  transition: 0.5s;
+}
+html .card #display-color,
+body .card #display-color {
   width: calc(35vw - 2px);
   height: 85px;
   margin: 0 auto;
@@ -69,8 +73,8 @@ body #display-color {
   gap: 35px;
   font-size: 40px;
 }
-html #display,
-body #display {
+html .card #display,
+body .card #display {
   font-size: 24px;
   padding: 25px;
   width: 35vw;
@@ -187,10 +191,10 @@ body.light .card {
 body.light .card i {
   color: #fffdf5;
 }
-body.light #display {
+body.light .card #display {
   color: black;
 }
-body.light #display-color {
+body.light .card #display-color {
   border-bottom: 1px solid black;
 }
 body.light #parameters {
@@ -218,10 +222,10 @@ body.dark .card {
 body.dark .card i {
   color: #0a0a0a;
 }
-body.dark #display {
+body.dark .card #display {
   color: #e0e0e0;
 }
-body.dark #display-color {
+body.dark .card #display-color {
   border-bottom: 1px solid #e0e0e0;
 }
 body.dark #parameters {
