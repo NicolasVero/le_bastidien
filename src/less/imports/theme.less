@@ -1,0 +1,79 @@
+// out: false
+
+body.light {
+    background-color: @l-background-color;
+    
+    .carte{
+
+		border: 1px solid @l-main-color;
+
+        i {
+            color: @l-background-color;
+        }
+    }
+
+    #display {
+        color: @l-main-color;
+    }
+
+    #display-color {
+		border-bottom: 1px solid @l-main-color;
+    }
+
+    #parametres {
+		background-color: @l-background-color;
+
+        &.active {
+		    box-shadow: 18px -1px 16px 27px @l-main-color;
+        }
+    }
+
+    input {
+        border-bottom: 2px solid @l-main-color;
+        color: @l-main-color;
+
+        &.focus {
+            border-bottom: 3px solid @l-main-color;
+        }
+    }
+}
+
+
+
+body.dark {
+    background-color: @d-background-color;
+    
+    .carte{
+
+		border: 1px solid @d-main-color;
+
+        i {
+            color: @d-background-color;
+        }
+    }
+
+    #display {
+        color: @d-main-color;
+    }
+
+    #display-color {
+		border-bottom: 1px solid @d-main-color;
+    }
+
+    #parametres {
+		background-color: @d-background-color;
+
+        &.active {
+		    box-shadow: 18px -1px 16px 27px @d-main-color;
+        }
+    }
+
+    input {
+        border-bottom: 2px solid @d-main-color;
+        color: @d-main-color;
+
+        &.focus {
+            border-bottom: 3px solid @d-main-color;
+        }
+    }
+}

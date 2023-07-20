@@ -3,5 +3,5 @@
 //! verifier tout le temps utiliser meme cotte ('' ou "") mais pas les deux
 
 message quand clic sur melange
-case 90
 dark mode
+etoiles deviennent noires certains fonds

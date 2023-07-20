@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="src/style/style.css">
     <title>Authentification</title>
 </head>
-<body>
+<body class="light">
     
     <?php
 

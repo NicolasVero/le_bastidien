@@ -24,7 +24,6 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: #fffdf5;
   overflow: hidden;
 }
 html .form,
@@ -39,7 +38,6 @@ body .form {
 }
 html .carte,
 body .carte {
-  border: 1px solid black;
   width: 35vw;
   margin: 0 auto;
   min-width: 300px;
@@ -53,13 +51,8 @@ html .carte h2,
 body .carte h2 {
   margin-top: 0;
 }
-html .carte i,
-body .carte i {
-  color: #fffdf5;
-}
 html #display-color,
 body #display-color {
-  border-bottom: 1px solid black;
   width: calc(35vw - 2px);
   height: 85px;
   margin: 0 auto;
@@ -72,7 +65,6 @@ body #display-color {
 }
 html #display,
 body #display {
-  color: black;
   font-size: 24px;
   padding: 25px;
   width: 35vw;
@@ -99,7 +91,6 @@ html #parametres,
 body #parametres {
   height: 100vh;
   width: 350px;
-  background-color: #fffdf5;
   position: absolute;
   right: -350px;
   top: 0;
@@ -111,7 +102,6 @@ body #parametres {
 }
 html #parametres.active,
 body #parametres.active {
-  box-shadow: 18px -1px 16px 27px #000000;
   transform: translateX(-350px);
 }
 html #vail,
@@ -158,6 +148,62 @@ body #vail.active {
     padding: 130px 15px !important;
   }
 }
+body.light {
+  background-color: #fffdf5;
+}
+body.light .carte {
+  border: 1px solid black;
+}
+body.light .carte i {
+  color: #fffdf5;
+}
+body.light #display {
+  color: black;
+}
+body.light #display-color {
+  border-bottom: 1px solid black;
+}
+body.light #parametres {
+  background-color: #fffdf5;
+}
+body.light #parametres.active {
+  box-shadow: 18px -1px 16px 27px black;
+}
+body.light input {
+  border-bottom: 2px solid black;
+  color: black;
+}
+body.light input.focus {
+  border-bottom: 3px solid black;
+}
+body.dark {
+  background-color: #0a0a0a;
+}
+body.dark .carte {
+  border: 1px solid #e0e0e0;
+}
+body.dark .carte i {
+  color: #0a0a0a;
+}
+body.dark #display {
+  color: #e0e0e0;
+}
+body.dark #display-color {
+  border-bottom: 1px solid #e0e0e0;
+}
+body.dark #parametres {
+  background-color: #0a0a0a;
+}
+body.dark #parametres.active {
+  box-shadow: 18px -1px 16px 27px #e0e0e0;
+}
+body.dark input {
+  border-bottom: 2px solid #e0e0e0;
+  color: #e0e0e0;
+}
+body.dark input.focus {
+  border-bottom: 3px solid #e0e0e0;
+}
 button {
   background-color: #39955C;
   color: white;
@@ -182,9 +228,7 @@ button.second {
 input {
   background: transparent;
   border: none;
-  border-bottom: 2px solid black;
   text-align: center;
-  color: black;
   font-size: 45px;
   font-weight: 800;
   min-width: 300px;
@@ -198,7 +242,6 @@ input::-webkit-inner-spin-button {
 }
 input:focus {
   outline: none;
-  border-bottom: 3px solid black;
 }
 @font-face {
   font-family: 'Outfit';
