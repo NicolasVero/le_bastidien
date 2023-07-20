@@ -10,6 +10,7 @@ html, body {
 	padding: 0;
     // background-color: @l-background-color;
 	overflow: hidden;
+	transition: .5s;
 
 
     .form {
@@ -108,4 +109,30 @@ html, body {
 			display: block;
 		}
 	}
+
+
+	.shuffle {
+		position: relative;
+	}
+	  
+
+	  .shuffle:after {
+		content: "Les gages ont été mélangés";
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		transform: translateX(-50%);
+		padding: 5px 10px;
+		border-radius: 5px;
+		font-size: 14px;
+		opacity: 0; 
+		width: 100%;
+		display: block;
+		pointer-events: none; 
+		transition: opacity 0.3s ease; 
+	  }
+	  
+	  .shuffle.show-message:after {
+		opacity: 1;
+	  }
 }

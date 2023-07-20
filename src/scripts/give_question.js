@@ -15,7 +15,12 @@ async function displayQuestions() {
         ];
 
         shuffle.addEventListener('click', () => {
-            shuffle_questions(all_questions)
+            shuffle_questions(all_questions);
+            shuffle.classList.add('show-message');
+
+            setTimeout(() => {
+                shuffle.classList.remove('show-message');
+            }, 3000);
         });
 
         number.addEventListener('click', () => {
@@ -25,7 +30,6 @@ async function displayQuestions() {
         submit.addEventListener('click', () => {
 
             let value = number.value;
-            console.log(value)
             
             if(value === '90') value = 87;
             if(value === '87') value = 90;

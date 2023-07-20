@@ -25,6 +25,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  transition: 0.5s;
 }
 html .form,
 body .form {
@@ -117,6 +118,30 @@ html #vail.active,
 body #vail.active {
   display: block;
 }
+html .shuffle,
+body .shuffle {
+  position: relative;
+}
+html .shuffle:after,
+body .shuffle:after {
+  content: "Les gages ont été mélangés";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  opacity: 0;
+  width: 100%;
+  display: block;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+html .shuffle.show-message:after,
+body .shuffle.show-message:after {
+  opacity: 1;
+}
 @media (max-width: 768px) {
   html,
   body {
@@ -176,6 +201,9 @@ body.light input {
 body.light input.focus {
   border-bottom: 3px solid black;
 }
+body.light .shuffle:after {
+  color: black;
+}
 body.dark {
   background-color: #0a0a0a;
 }
@@ -203,6 +231,9 @@ body.dark input {
 }
 body.dark input.focus {
   border-bottom: 3px solid #e0e0e0;
+}
+body.dark .shuffle:after {
+  color: #e0e0e0;
 }
 button {
   background-color: #39955C;

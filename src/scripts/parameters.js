@@ -1,7 +1,8 @@
-const [gear, parametres, get_json, vail] = [
+const [gear, parametres, get_json, swicth_theme, vail] = [
 	document.querySelector('.gear'),
 	document.querySelector('#parametres'),
 	document.querySelector('.get_json'),
+	document.querySelector('.swicth_theme'),
 	document.querySelector('#vail')
 ];
 
@@ -25,6 +26,18 @@ get_json.addEventListener('click', () => {
 	let password = prompt('Demande d\'accès aux questions');
 	if(password === 'Amelie')
 		window.open("src/datas/datas.json","_blank", null);
+});
+
+swicth_theme.addEventListener('click', () => {
+	const body = document.querySelector('body');
+
+	if(body.classList.contains('light')) {
+		body.classList.remove('light');
+		body.classList.add('dark');
+	} else {
+		body.classList.add('light');
+		body.classList.remove('dark');
+	}
 });
 
 //! a debuguer 
