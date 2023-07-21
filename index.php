@@ -30,7 +30,7 @@
         <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
             <h1>Authentification</h1>
             <input type="password" name="password" id="password" required>
-            <button class="main" type="submit">Soumettre</button>
+            <button class="main" type="submit">Commencer</button>
         </form>
         
         <?php

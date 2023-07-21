@@ -24,8 +24,8 @@
 	<div id="vail"></div>
 	<div id="parameters">
 		<button class="shuffle second">Mélanger les gages</button>
-		<button class="get_json second">Accéder aux questions</button>
 		<button class="swicth_theme second">Changer le thème</button>
+		<button class="get_json second">Accéder aux questions</button>
 	</div>
 
 	<i class="fa-solid fa-gear gear" style="color: #ffffff;"></i>

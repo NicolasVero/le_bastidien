@@ -34,26 +34,58 @@ async function displayQuestions() {
             if(value === '90') value = 87;
             if(value === '87') value = 90;
             
-            if(value !== '' && value <= all_questions.length && value > 0 ) {  
+            if(value !== '') {
+                let color    = '#73151E';
+                let title    = 'Perdus';
+                let question = 'Vous vous êtes trop éloignés du village et vous vous êtes perdus... En attendant que le jour se lève, un shot chacun, ça vous réchauffera.';
+                let stars    = 3;
+
+                if(value <= all_questions.length && value > 0 ) { 
+                    color    = all_colors[value - 1];
+                    title    = all_questions[value - 1][0];
+                    question = all_questions[value - 1][1];
+                    stars    = all_questions[value - 1][2];
+                }
 
                 let card = document.querySelector('.card');
                 if (card.classList.contains('not-show')) 
                     card.classList.remove('not-show');
 
-                display_color.style.background = all_colors[value - 1];
+                display_color.style.background = color;
                 display_color.innerHTML = '';
 
-                for(let i = 0; i < all_questions[value - 1][2]; i++) 
-                    display_color.innerHTML += '<i class="fa-solid fa-star"></i>';
+                const star_style = get_stars_exception(value);
+
+                for(let i = 0; i < stars; i++) 
+                    display_color.innerHTML += '<i class="fa-solid fa-star" ' + star_style + '></i>';
                 
-                display.innerHTML = '<h2>' + all_questions[value - 1][0] + '<h2>';
-                display.innerHTML += all_questions[value - 1][1];
+                display.innerHTML = '<h2>' + title + '<h2>';
+                display.innerHTML += question;
             }
         });
         
     } catch (err) {
         console.error(`Questions non reçues : ${err}`);
     }
+}
+
+function get_stars_exception(value) {
+    const excepts_light = [16, 37, 52];
+    const excepts_dark  = [25, 33, 50, 60];
+
+    if (document.querySelector('body').classList.contains('light')) 
+        if (isInArray(parseInt(value), excepts_light)) 
+            return 'style="color: #000000"';
+          
+    if (document.querySelector('body').classList.contains('dark')) 
+        if (isInArray(parseInt(value), excepts_dark)) 
+            return 'style="color: #FFFFFF"';
+
+    return '';
+}
+
+function isInArray(value, array) {
+    return array.indexOf(value) !== -1;
 }
 
 function shuffle_questions(questions) {
