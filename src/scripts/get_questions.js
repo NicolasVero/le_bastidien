@@ -6,7 +6,6 @@ async function get_questions() {
         const all_colors    = data_json[0];
         const all_questions = data_json[1];
     
-        console.log(data_json);
         get_form_rows(data_json);
     }
 
