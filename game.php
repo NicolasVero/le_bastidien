@@ -25,6 +25,7 @@
 		<button class="shuffle second">Mélanger les gages</button>
 		<button class="swicth_theme second">Changer le thème</button>
 		<button class="get_json second">Accéder aux questions</button>
+		<a class="second" href="./update.html">Modifier les questions</a>
 	</div>
 
 	<i class="fa-solid fa-gear gear" style="color: #ffffff;"></i>

@@ -10,7 +10,7 @@
     
     <?php
 
-        $password = "Heloise";
+        $password = " ";
         $message  = "";
 
         if ($_SERVER["REQUEST_METHOD"] === "POST") {
